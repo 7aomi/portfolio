@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+body {
+  background: #e7efef;
+  font-family: "Montserrat Alternates", "Zen Kaku Gothic New", sans-serif;
+}
+button {
+  border: 0;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 80px;
+}
+.title {
+  margin-bottom: 24px;
+  background: linear-gradient(to bottom, #5f9ea0 25%, #42666e 75%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 46px;
+  letter-spacing: 0.01em;
+}
+.stopWatchPanel {
+}
+.display {
+  box-sizing: border-box;
+  width: 150px;
+  margin: 0 auto 15px;
+  padding: 8px 16px;
+  border-radius: 3px;
+  background: #363e3e;
+  color: #c5cdcf;
+  text-align: right;
+}
+.actions {
+  display: flex;
+  margin-bottom: 20px;
+}
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 110px;
+  padding: 8px 10px;
+  transition: 0.1s linear;
+  border: 1px solid #c4cfcf;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  color: #4a6060;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+
+  &:nth-child(n + 2) {
+    margin-left: 8px;
+  }
+  &:hover {
+    box-shadow: none;
+  }
+
+  &.is-disabled {
+    background: #d4dddd;
+    box-shadow: none;
+    pointer-events: none;
+  }
+}
+.startButton {
+}
+.stopButton {
+}
+.log {
+  min-height: 140px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  background: #fff;
+}
+.message {
+  opacity: 0.8;
+  color: #333;
+  font-size: 13px;
+
+  &:nth-child(n + 2) {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px solid #e2e9e8;
+  }
+}
